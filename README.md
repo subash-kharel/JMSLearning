@@ -12,3 +12,13 @@
  -------------------------------------
  Installing activemq artemis: 1) Download, 2) go to bin directory, 3) ./artemis create filepathtowhereyouwanttocreatebroker,
  4) go to bin directory of the broker, 5)./artemis run to start the broker.
+ 
+ 
+ ---------------------------------
+ Few need to know concept
+ Connection Factory: provided to us by JMS provider like activemq
+ Destination: we use jms prvider to create a destination which could be a queue or a topic
+ Jms provider creates connectionfactory adn destination and  puts them in to JNDI(Java naming directory interface) registary.
+ 
+ Connection: Connection can be created using connection factory.
+ Session: From connection we can create a session.
