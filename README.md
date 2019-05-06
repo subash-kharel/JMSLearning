@@ -22,3 +22,16 @@
  
  Connection: Connection can be created using connection factory.
  Session: From connection we can create a session.
+ 
+ -----------------------------JMS2-----------------------------------------
+ Jms2 has JMSContext which bind Connection + Session making it easier for us to create producer and consumer.
+ THese jmSproducer and consumer also auto close the session and connection when pub-sub is completed.
+ They also give easy access to the message header, body and properties.
+ 
+---------------------------------------------------
+JMS message is divided into three parts:
+1) MessageHeader : These are the metadata that conveys sth about the message. These are also divided in to two types:
+    a) Providers set headers
+    b) Developer set headers
+2) Messge Properties
+3) MessageBody/Payload
